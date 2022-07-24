@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;698&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./chart.js/package/dist/chart.js"></script>
+    <title>Snapchat Analysis</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Snapchat Analysis</h1>
+            <input type="file" name="file" id="file" onchange="processJSON()" accept=".json">
+            <label for="file">
+                <img src="upload.svg" alt="Upload">
+                <!-- <p>Upload JSON</p> -->
+            </label>
+        </div>
+
+        <div class="content1">
+            <div class="chart-label">Saved Recieved Chats</div>
+            <canvas id="srChats" width="200" height="200"></canvas>
+        </div>
+        <div class="content2">
+            <div class="chart-label">Saved Sent Chats</div>
+            <canvas id="ssChats" width="200" height="200"></canvas>
+        </div>
+        <div class="content3">
+            <div class="chart-label">Unsaved Recieved Chats</div>
+            <canvas id="urChats" width="200" height="200"></canvas>
+        </div>
+        <div class="content4">
+            <div class="chart-label">Unsaved Sent Chats</div>
+            <canvas id="usChats" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
